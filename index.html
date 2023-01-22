@@ -5,40 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Altas Tabuadas</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background-color: black;
-        }
-        h1 {
-            margin: 40px auto;
-            color: white;
-            text-align: center;
-        }
-
-        section {
-            background-color: burlywood;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        #altura {
-            min-height: 80vh;
-        }
-        footer {
-            background-color: green;
-            padding: 15px;
-            text-align: center;
-        }
-        #Resultado {
-            margin-top: 30px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">n
 </head>
 <body>
     <main>
@@ -58,18 +25,6 @@
     <footer>
         Todos os direitos reservados a Altamir Junior
     </footer>
-    <script>
-        function executar() {
-            let Num = document.getElementById('numero').value
-            let numero = Number(Num)
-            let Resultado = document.getElementById('Resultado')
-            Resultado.innerHTML = `Número escolhido: ${numero} <br><br><br> `
-            
-
-            for(let multiplicador = 1; multiplicador<=10; multiplicador++ ) {
-                Resultado.innerHTML += `${numero}*${multiplicador}= ${numero*multiplicador} <br><br>`
-            }
-        }
-    </script>
+    <script src="/script.js"></script>
 </body>
 </html>
